@@ -1,0 +1,26 @@
+<%
+                                Connection con = null;
+                                PreparedStatement ps = null;
+                                try {
+                                    Class.forName(driverName);
+                                    con = DriverManager.getConnection(url);
+                                    String sql = "SELECT Username FROM UserR";
+                                    ps = con.prepareStatement(sql);
+                                    ResultSet rs = ps.executeQuery();
+                            %>
+                            <html:select property="username">
+                                <%
+                                    while (rs.next()) {
+                                        String fname = rs.getString("username");
+                                %>
+                                <html:option value="Select Log"> Select Movie</html:option>
+                                <html:option value="<%=fname%>"><%=fname%></html:option>
+                                <%
+                                    }
+                                %>
+                            </html:select>
+                            <%
+                                } catch (SQLException sqe) {
+                                    out.println(sqe);
+                                }
+                            %>

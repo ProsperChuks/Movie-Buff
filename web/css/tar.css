@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 10, 2019, 10:07:11 PM
+    Author     : FOCUS
+*/
+
+::-webkit-scrollbar-thumb{
+    color: #0e1424 !important;
+}
+
+
+a#bt{
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
+    padding: 11px 15px !important;
+    background-color: transparent;
+}
+
+a#bt:hover{
+    transition: ease-in-out 0.5s;
+    background: #cea06c;
+    color: #ffffff !important;
+    border: hidden !important;
+}
+
+.close:hover{
+    color: red !important;
+}
+
+.modal{
+    width: 650px !important;
+}
+
+div .jos{
+    float: right !important;
+}

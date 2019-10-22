@@ -1,0 +1,11 @@
+<html:form method="post" action="/logIn">
+            <div id="logName">
+                <label for="surname">Surname: </label>
+                <html:text property="surnam"></html:text>
+            </div>
+            <div id="passw">
+                <label for="password">Password: </label>
+            <html:password property="passs"></html:password>
+            </div>
+            <html:submit>Log In</html:submit>
+        </html:form>
